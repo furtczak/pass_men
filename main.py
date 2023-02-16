@@ -35,7 +35,8 @@ while True:
         view()
     elif mode=="r":
         num=input("pleas specify a line: ")
-        if num!=0:
+        if num!=-1:
+            num=int(num)- 1
             remove(int(num))
     else:
         print("invalid choice")
