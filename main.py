@@ -1,5 +1,9 @@
 import os
 
+dir_path = os.path.dirname(os.path.abspath(__file__))
+
+pass_file = os.path.join(dir_path, "pass.txt")
+
 m_pwd=input("Main passwrd: ")
 
 def view():
@@ -14,10 +18,6 @@ def add():
      
     with open('pass.txt','a')as f:
         f.write(name+"|"+pas+"\n")
-
-absolute_path = os.path.abspath('D:\VSC pliki\pass_men\pass_men\pass.txt')
-
-pass_file=absolute_path
 
 def remove(l_num):
     newpath=pass_file+".new"
