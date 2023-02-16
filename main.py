@@ -14,7 +14,10 @@ def add():
      
     with open('pass.txt','a')as f:
         f.write(name+"|"+pas+"\n")
-pass_file='D:\VSC pliki\pass_men\pass_men\pass.txt'
+
+absolute_path = os.path.abspath('D:\VSC pliki\pass_men\pass_men\pass.txt')
+
+pass_file=absolute_path
 
 def remove(l_num):
     newpath=pass_file+".new"
